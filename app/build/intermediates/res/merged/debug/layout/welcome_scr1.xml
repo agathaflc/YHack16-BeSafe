@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+     >
+
+    <TextView
+        android:id="@+id/tv_wel1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="WELCOME TO\n ALERT"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E98F02"
+        android:textSize="50sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/alert_transparant" />
+		
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="Feel safe by Staying connected to Your Friends and Family"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_wel_getStarted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#10000000"
+        android:maxHeight="55dp"
+        android:textColor="#E98F02"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:text="@string/welscr_1_getStarted" />
+
+</LinearLayout>

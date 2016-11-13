@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_set_titleAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Settings"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#E98F02"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Reset Alert"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E98F02" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#E98F02"
+                    android:maxHeight="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_set_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_refresh" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Reset"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+            </LinearLayout>
+
+            
+
+                <TextView
+                    android:id="@+id/TextView003"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Custom Message"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E98F02" />
+
+                <TextView
+                    android:id="@+id/TextView004"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#E98F02"
+                    android:maxHeight="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_set_alertmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_warning" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Alert Msg"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
+            
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_set_meetme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_group" />
+
+                    <TextView
+                        android:id="@+id/TextView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="MeetMe Msg"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+           
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_set_followmemsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                     >
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_merge" />
+
+                    <TextView
+                        android:id="@+id/TextView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="FollowMe Msg"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+            
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

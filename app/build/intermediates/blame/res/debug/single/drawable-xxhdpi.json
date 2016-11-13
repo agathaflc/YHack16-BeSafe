@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_cancel.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_cancel.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_directions.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_directions.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_refresh.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_refresh.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_settings.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_help.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_help.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_place.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_place.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_share.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_share.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_drawer.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_group.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_group.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_merge.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_merge.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_discard.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_discard.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_warning.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_warning.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_about.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-xxhdpi/ic_action_about.png"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "outputFile": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/values-w820dp/dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 137,
+                    "endOffset": 246
+                },
+                "from": {
+                    "file": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/values-w820dp/google_maps_api.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 137,
+                        "endOffset": 902
+                    }
+                }
+            }
+        ]
+    }
+]

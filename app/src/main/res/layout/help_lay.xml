@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_help_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                android:text="About Alert"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#E98F02"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/textView994"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Alert lets you quickly alert people important to you when you are in an unsafe location and provide them with information they may be able to use to help you."
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_help_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:text="Ask for Help"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#E98F02"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="When you are feeling unsafe, quickly alert your emergency contacts with information like current location and predefined messages about your situation."
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_help_subtitle_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:text="Stay connected"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#E98F02"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Give peace of mind to people important in your life by sharing your location with them."
+                android:textSize="17sp" />
+                    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

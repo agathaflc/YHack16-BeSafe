@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/diag_warning_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp" >
+
+         <Button
+             android:id="@+id/diag_warning_cancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:background="#00000000"
+             android:gravity="center_horizontal|center_vertical"
+             android:text="Close"
+             android:layout_weight="1"
+             android:textColor="#E98F02" />
+
+         <Button
+             android:id="@+id/diag_warning_ok"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:background="#00000000"
+             android:gravity="center_horizontal|center_vertical"
+             android:text="Ok!"
+             android:layout_weight="1"
+             android:textColor="#E98F02" />
+
+     </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_wel2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/welscr_2_pickFamily_Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#E98F02"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/welscr_2_pickFamily_subTitle"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/welscr_2_contacts"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#E98F02" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E98F02"
+            android:maxHeight="2dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#E98F02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_wel2_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                
+                android:gravity="left|center_vertical"
+                android:maxHeight="55dp"
+                android:text="@string/welscr_2_previous"
+                android:textColor="#E98F02"
+                android:textSize="20sp"
+                android:textStyle="italic" 
+                android:background="#10000000" />
+
+            <Button
+                android:id="@+id/bt_wel2_done"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:maxHeight="55dp"
+                android:text="@string/welscr_2_done"
+                android:textColor="#E98F02"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:background="#10000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

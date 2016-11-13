@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alert</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Relode</string>
+    <string name="welscr_1_getStarted">Get Started  -></string>
+    
+    <string name="welscr_2_pickFamily_Title">Pick family and close friends</string>
+    <string name="welscr_2_pickFamily_subTitle">Pick people that you trust in an emergency. The App will Contact them when sending out an alert</string>
+	<string name="welscr_2_contacts">Contacts</string>
+	<string name="welscr_2_previous">Previous</string>
+	<string name="welscr_2_done">Done!</string>
+	
+	<string name="drawer_open">drawer Open</string>
+	<string name="drawer_close">drawer Close</string>
+	<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+	
+	<string name="direction">Direction</string>
+    <string name="close">Close</string>
+    
+</resources>

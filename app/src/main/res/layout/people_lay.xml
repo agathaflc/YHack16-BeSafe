@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_people_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:text="People"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#E98F02"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView994"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="These People are your emergency contacts and will be alerted when you're in denger or just feeling unsafe"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/welscr_2_contacts"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#E98F02" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#E98F02"
+            android:maxHeight="2dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/people_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#E98F02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_people_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#10000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxHeight="55dp"
+                android:text="Save"
+                android:textColor="#E98F02"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
