@@ -6,20 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<fragment android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.theark.alert.Map"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.theark.alert.Map" />
 
     <!--<fragment xmlns:map="http://schemas.android.com/apk/res-auto"-->
-        <!--android:id="@+id/map"-->
-        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--tools:context="com.example.safestroute.Map">-->
+    <!--android:id="@+id/map"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.safestroute.Map">-->
 
     <!--</fragment>-->
 
@@ -30,8 +30,47 @@
         android:layout_gravity="bottom|right"
         android:layout_margin="20sp"
         android:src="@drawable/ic_expand_00004"
-        app:layout_anchor="@id/map"
         app:backgroundTint="@color/colorAccent"
-        app:layout_anchorGravity="bottom|right|end" />
+        app:layout_anchor="@id/map"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@android:color/white" />
     <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:foregroundGravity="bottom|left">
+
+
+        <EditText
+            android:id="@+id/etOrigin"
+            android:layout_width="160sp"
+            android:layout_height="28sp"
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:gravity="start"
+            android:hint="Origin"
+            android:padding="6sp" />
+
+        <EditText
+            android:id="@+id/etDest"
+            android:layout_width="160sp"
+            android:layout_height="28sp"
+            android:textSize="16sp"
+            android:layout_below="@+id/etOrigin"
+            android:layout_marginTop="6sp"
+            android:background="@android:color/white"
+            android:hint="Destination"
+            android:padding="6sp" />
+
+        <Button
+            android:id="@+id/bFindPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDest"
+            android:padding="6sp"
+            android:text="Find safest path" />
+    </RelativeLayout>
+
+
 </android.support.design.widget.CoordinatorLayout>

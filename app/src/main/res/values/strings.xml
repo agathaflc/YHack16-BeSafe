@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Alert</string>
+    <string name="app_name">BeSafe</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Relode</string>
     <string name="welscr_1_getStarted">Get Started  -></string>
@@ -19,5 +19,8 @@
 	
 	<string name="direction">Direction</string>
     <string name="close">Close</string>
-    
+    <string name="button_report">Report</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="title_report_location">Report crime</string>
+
 </resources>

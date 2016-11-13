@@ -699,9 +699,11 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accept">Accept</string>
     <string name="action_settings">Relode</string>
-    <string name="app_name">Alert</string>
+    <string name="app_name">BeSafe</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_report">Report</string>
     <string name="cast_ad_label">Ad</string>
     <string name="cast_casting_to_device">Casting to %1$s</string>
     <string name="cast_closed_captions">Closed captions</string>
@@ -795,6 +797,7 @@
     <string name="tagmanager_preview_dialog_button">Continue</string>
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
+    <string name="title_report_location">Report crime</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <string name="welscr_1_getStarted">Get Started  -></string>
     <string name="welscr_2_contacts">Contacts</string>

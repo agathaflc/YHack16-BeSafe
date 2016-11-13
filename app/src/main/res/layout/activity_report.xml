@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <TextView
+        android:id="@+id/tvReportInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter brief description below"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_margin="12sp"
+        android:id="@+id/etDesc"
+        android:hint="Enter description here"
+        android:layout_below="@id/tvReportInstruction" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDesc"
+        android:id="@+id/bReport"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight= "12sp"
+        android:text="Report"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bReport"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight= "12sp"
+        android:id="@+id/bCancel"
+        android:text="Cancel"
+        />
+
+</RelativeLayout>

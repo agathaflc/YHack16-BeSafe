@@ -2,6 +2,8 @@ package com.theark.alert;
 
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Criteria;
@@ -15,13 +17,18 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
+import android.text.Editable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -49,6 +56,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.Response;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
@@ -58,6 +66,7 @@ import static com.theark.alert.R.id.map;
 
 public class Map extends FragmentActivity implements LocationListener, OnMapReadyCallback {
     GoogleMap googleMap;
+    Context context;
     String lat, lng = "";
     AsyncTask<String, Void, String> shareRegidTask;
     List<List<LatLng>> polydecoded_paths = new ArrayList<List<LatLng>>();
@@ -73,27 +82,43 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
 
     private LocationManager locationManager;
     private LocationListener locationListener;
-    private ViolenceMapClient client;
+    public static ViolenceMapClient client;
     private TweetsClient tweetsClient;
     private ArrayList<LatLng> vLocations = new ArrayList<>();
 
     static boolean gotCurrent = false;
 
-    private Location currentLocation;
+    public static Location currentLocation;
     private Marker currentLocMarker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        context = this;
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //double result = CalculationByDistance(rns,);
+                startActivity(new Intent(Map.this, ReportActivity.class));
             }
         });
+
+        Button findSafestPathButton = (Button) findViewById(R.id.bFindPath);
+        if (findSafestPathButton != null) {
+            findSafestPathButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getBaseContext(), "Finding safest path..", Toast.LENGTH_LONG).show();
+                    String orig = ((EditText) findViewById(R.id.etOrigin)).getText().toString();
+                    String dest = ((EditText) findViewById(R.id.etDest)).getText().toString();
+                    String[] params = {orig, dest};
+                    initialise();
+                    shareRegidTask.execute(params);
+                }
+            });
+        }
 
         // Initialize service generator
         // Create a very simple REST adapter which points the GitHub API endpoint.
@@ -118,6 +143,7 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
                                 .title("Current location");
                         currentLocMarker = googleMap.addMarker(a);
                         gotCurrent = true;
+                        Toast.makeText(getBaseContext(), "Location found", Toast.LENGTH_SHORT).show();
                         CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(currentLatLng, 5);
                         googleMap.animateCamera(yourLocation);
                     } else {
@@ -187,14 +213,6 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
 //		CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(ltln, 12);
 //		googleMap.animateCamera(yourLocation);
 
-
-        //
-        //getdirections();
-        String para = "";
-        initialise();
-
-        //shareRegidTask.execute(para);
-
         fill_unsafe();
         ////googleMap.addPolyline(lineOptions);
 
@@ -217,15 +235,18 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
     }
 
     public void initialise() {
-        shareRegidTask = new AsyncTask<String, Void, String>() {
+        shareRegidTask = new AsyncTask<String , Void, String>() {
 
 
-            protected String doInBackground(String... input_para) {
+            protected String doInBackground(String ...p) {
                 String to_be_returned = "empty";
                 try {
-
-                    URL url = new URL("https://maps.googleapis.com/maps/api/directions/json?origin=sherman%20avenue%20new%20haven&destination=ikea%20home%20furnishings%20new%20haven%20&key=AIzaSyC6x6YcC_422XnCBiXRCs8yNzQphAUBseg&alternatives=true");
+                //    sherman%20avenue%20new%20haven&destination=ikea%20home%20furnishings%20new%20haven%20&key=AIzaSyC6x6YcC_422XnCBiXRCs8yNzQphAUBseg&alternatives=true
+                    URL url = new URL("https://maps.googleapis.com/maps/api/directions/json?origin="+p[0].replace(" ","")+"&destination="+p[1].replace(" ","")+"&key=AIzaSyC6x6YcC_422XnCBiXRCs8yNzQphAUBseg&alternatives=true");
                     /** STEP 2 -- Open Connection */
+
+                Log.d("###url","https://maps.googleapis.com/maps/api/directions/json?origin="+p[0].replace(" ","")+"&destination="+p[1].replace(" ","")+"&key=AIzaSyC6x6YcC_422XnCBiXRCs8yNzQphAUBseg&alternatives=true");
+
                     HttpURLConnection con = (HttpURLConnection) url
                             .openConnection();
 
@@ -278,8 +299,8 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
                         List<LatLng> current_path = polydecoded_paths.get(i);
                         String path = "";
                         for (int j = 0; j < current_path.size(); j++) {
-                            for (int k = 0; k < unsafe_trial.size(); k++) {
-                                if (!check_if_closeby(unsafe_trial.get(k), current_path.get(j))) {
+                            for (int k = 0; k < vLocations.size(); k++) {
+                                if (!check_if_closeby(vLocations.get(k), current_path.get(j))) {
                                     count++;
                                 }
                             }
@@ -296,7 +317,8 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
                     }
                     String safe_path = "";
                     PolylineOptions options = new PolylineOptions().width(5).color(Color.BLUE).geodesic(true);
-                    for (int k = 0; k < polydecoded_paths.get(index_path).size(); k++) {
+                    int size = polydecoded_paths.get(index_path).size();
+                    for (int k = 0; k < size; k++) {
                         safe_path += polydecoded_paths.get(index_path).get(k) + "---";
                         //final_path_trace.add()
                         options.add(polydecoded_paths.get(index_path).get(k));
@@ -322,6 +344,16 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
                     } else {
                         Log.d("onPostExecute", "without Polylines drawn");
                     }
+
+                    // put markers on dest and orig
+
+                    googleMap.addMarker(new MarkerOptions().position(polydecoded_paths.get(index_path).get(0))
+                            .title("Origin:")
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                    googleMap.addMarker(new MarkerOptions().position(polydecoded_paths.get(index_path).get(size-1))
+                            .title("Destination:")
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+
 
                     Log.d("safe_paths", "##########");
                     Log.d("safe_paths", safe_path);
@@ -433,18 +465,7 @@ public class Map extends FragmentActivity implements LocationListener, OnMapRead
                         googleMap.moveCamera(CameraUpdateFactory.newLatLng(place));
                         vLocations.add(place);
                     }
-//                    Call<ViolenceLocation> reportCall = client.reportLocation(vLocations.get(0));
-//                    reportCall.enqueue(new retrofit2.Callback<ViolenceLocation>() {
-//                        @Override
-//                        public void onResponse(Call<ViolenceLocation> call, Response<ViolenceLocation> response) {
-//                            Log.d("onresponse report", response.toString());
-//                        }
-//
-//                        @Override
-//                        public void onFailure(Call<ViolenceLocation> call, Throwable t) {
-//                            Log.d("onresponse report", t.toString());
-//                        }
-//                    });
+
                 } else {
                     Log.d("onresponse", "unsuccessful");
                 }

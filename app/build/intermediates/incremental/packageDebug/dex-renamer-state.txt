@@ -1,4 +1,4 @@
-#Sun Nov 13 06:24:05 EST 2016
+#Sun Nov 13 08:26:33 EST 2016
 base.0=/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c968a2b67618a1cda579c01309416db6e86f4c69
 renamed.1=classes2.dex
 renamed.0=classes.dex

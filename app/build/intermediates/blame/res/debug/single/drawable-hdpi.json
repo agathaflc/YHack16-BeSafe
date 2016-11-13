@@ -48,12 +48,12 @@
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-hdpi/nav_forward.png"
     },
     {
-        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-hdpi/alert_transparant.png",
-        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-hdpi/alert_transparant.png"
-    },
-    {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-hdpi/aa.png",
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-hdpi/aa.png"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-hdpi/alert_transparant.png",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/drawable-hdpi/alert_transparant.png"
     },
     {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/drawable-hdpi/menu_trans.png",

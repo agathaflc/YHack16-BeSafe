@@ -226,11 +226,11 @@ public class MainActivity extends Activity {
 		iv_escort.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Toast.makeText(getApplicationContext(), "Calcualting safest route",
-						Toast.LENGTH_SHORT).show();
-
-				Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-				vib.vibrate(1000);
+//				Toast.makeText(getApplicationContext(), "Calcualting safest route",
+//						Toast.LENGTH_SHORT).show();
+//
+//				Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//				vib.vibrate(1000);
 
 				Intent escort_map_intent=new Intent(MainActivity.this, Map.class);
 

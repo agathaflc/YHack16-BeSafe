@@ -76,12 +76,12 @@
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/layout/head_chat.xml"
     },
     {
-        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/about_activity.xml",
-        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/layout/about_activity.xml"
-    },
-    {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/head_chat_dialog.xml",
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/layout/head_chat_dialog.xml"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/about_activity.xml",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/layout/about_activity.xml"
     },
     {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
@@ -228,12 +228,12 @@
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
-        "source": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/layout/design_layout_tab_icon.xml"
-    },
-    {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.8.0/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/exploded-aar/com.android.support/design/23.0.0/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/setmessage_dialog.xml",
@@ -254,6 +254,10 @@
     {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
         "source": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/activity_report.xml",
+        "source": "/Users/jeffrywicaksana/Desktop/Test/app/src/main/res/layout/activity_report.xml"
     },
     {
         "merged": "/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",

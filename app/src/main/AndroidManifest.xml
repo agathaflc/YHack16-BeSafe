@@ -29,8 +29,8 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/alert_transparant_red"
-        android:label="@string/app_name"
-        android:theme="@style/Base.AppTheme">
+        android:label="@string/app_name">
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -47,13 +47,16 @@
         </activity>
 
 
-        <activity android:name="com.theark.alert.MainActivity"></activity>
-        <activity android:name="com.theark.alert.PeopleActivity"></activity>
-        <activity android:name="com.theark.alert.SettingsActivity"></activity>
-        <activity android:name="com.theark.alert.HelpActivity"></activity>
-        <activity android:name="com.theark.alert.WelcomeScr_Detials"></activity>
-        <activity android:name="com.theark.alert.AboutActivity"></activity>
-        <activity android:name="com.theark.alert.Map"></activity>
+        <activity android:name="com.theark.alert.MainActivity" />
+        <activity android:name="com.theark.alert.PeopleActivity" />
+        <activity android:name="com.theark.alert.SettingsActivity" />
+        <activity android:name="com.theark.alert.HelpActivity" />
+        <activity android:name="com.theark.alert.WelcomeScr_Detials" />
+        <activity android:name="com.theark.alert.AboutActivity" />
+        <activity android:name="com.theark.alert.Map"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ReportActivity"
+            android:theme="@style/AppTheme"/>
 
 
         <receiver android:name="com.theark.alert.ReadSMS">

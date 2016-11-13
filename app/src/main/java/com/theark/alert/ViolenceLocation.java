@@ -5,21 +5,21 @@ package com.theark.alert;
  */
 
 public class ViolenceLocation {
-    private float lat;
-    private float lng;
+    private double lat;
+    private double lng;
     private String info;
 
-    public ViolenceLocation(float lat, float lng, String info) {
+    public ViolenceLocation(double lat, double lng, String info) {
         this.lat = lat;
         this.lng = lng;
         this.info = info;
     }
 
-    public float getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public float getLng() {
+    public double getLng() {
         return lng;
     }
 

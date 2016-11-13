@@ -5,29 +5,50 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="214764903089617"
-    token="-8829214071036541084" >
+    timestamp="222905338407265"
+    token="-8829214071036541084"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="354" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="672" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="45" />
     <task
         name="verifier"
-        duration="0" />
+        duration="7" />
+
+    <artifact
+        location="/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="214688280820239"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="222037816708371"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/jeffrywicaksana/Desktop/Test/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="214764903089617" />
+    <build
+        timestamp="222458729307291"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="222905338407265"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/jeffrywicaksana/Desktop/Test/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
 
 </instant-run>
